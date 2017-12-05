@@ -97,7 +97,7 @@ $(function () {
     $('.sbtn').click(function (e) {
         console.log(keyword)
         e.preventDefault()
-        if(keyword=='undefined'){
+        if(keyword==undefined){
             return;
         }else{
             console.log(keyword)
