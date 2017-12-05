@@ -39,7 +39,7 @@ $(function () {
     })
     function search(keyword){
         $.ajax({
-            url:'http://api.jisuapi.com/news/search?keyword='+keyword+'&appkey=aeaaaaf1ab84e812',
+            url:'https://api.jisuapi.com/news/search?keyword='+keyword+'&appkey=aeaaaaf1ab84e812',
 
             dataType:'JSONP',
             beforeSend:function () {
