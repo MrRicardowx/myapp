@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/jquery.js"></script>
+    <script src="js/common.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/search.js"></script>
+</head>
+<style>
+.search{
+    display: flex;
+}
+    .back{
+        color: #ffffff;
+        font-size:0.3rem;
+        font-family: '宋体';
+        line-height:0.45rem;
+        margin-left:0.1rem;
+    }
+    .search>input{
+        margin-left:0.1rem;
+    }
+    .sbtn{
+        margin-left:0.1rem;
+    }
+    .main{
+        width:100%;
+        height:auto;
+        overflow: hidden;
+    }
+    .main span{
+        display: block;
+        float:left;
+        margin:0.05rem 0.05rem;
+        font-family:'宋体';
+        background: pink;
+        padding:0.05rem 0.05rem ;
+    }
+.content{
+    width:100%;
+    height:auto;
+}
+.content .list{
+    width:95%;
+    margin: 0 auto;
+    height:auto;
+    border-bottom:1px solid #ccc;
+    padding:0.1rem 0;
+    display: flex;
+    justify-content:space-between;
+}
+.content .list a{
+    display: flex;
+    justify-content:space-between;
+}
+.content .nopic a{
+    display:block;
+}
+.left{
+    width:40%;
+    height:auto;
+    overflow: hidden;
+}
+.con{
+    width:56%;
+    box-sizing: border-box;
+    height:1rem;
+    overflow: hidden;
+    font-size:16px;
+    color: #000000;
+
+}
+.title{
+    width:3.55rem;
+    margin:0 auto;
+    font-size:20px;
+    color: #000;
+    height: 0.5rem;
+    overflow: hidden;
+    line-height: 0.5rem;
+}
+.nr{
+    width:3.55rem;
+    font-size:14px;
+    color:#666666;
+    box-sizing: border-box;
+    height:0.4rem;
+    overflow: hidden;
+    margin: 0 auto;
+    /*line-height:0.7rem;*/
+    text-overflow: ellipsis;
+}
+.time{
+    width:100%;
+    height:auto;
+    margin-top:0.1rem;
+    font-size:15px;
+    color: #666666;
+}
+.left img{
+    width:100%;
+}
+.nopic{
+    padding-top:0.1rem;
+    border-bottom:1px solid #ccc;
+}
+.btn {
+    display: block;
+    width: 1.2rem;
+    height: 0.4rem;
+    text-align: center;
+    line-height: 0.4rem;
+    background: #d33682;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 16px;
+    border: 0px;
+}
+.load{
+    width:0.8rem;
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.zz{
+    display: none;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+</style>
+<body>
+     <section class="search">
+         <div class="back">&lt;</div>
+        <input type="text" placeholder="请输入搜索内容">
+        <a href="" class="iconfont sbtn">&#xe600;</a>
+     </section>
+     <div class="main"></div>
+     <ul class="content">
+
+     </ul>
+     <div class="zz">
+         <img class="load" src="img/timg1.gif" alt="">
+     </div>
+</body>
+</html>
